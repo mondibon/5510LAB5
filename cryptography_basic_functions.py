@@ -42,7 +42,9 @@ def main():
     # Part 2: show bytes as hex and as base64.
     data = b"\x00\x10\xff\x42"
     # TODO: print `data` as a hex string.
+    print(f"Hex: {data.hex()}")
     # TODO: print `data` as a base64 string (use b64e).
+    print(f"Base64: {b64e(data)}")
 
     # Part 3: round-trip some bytes through the helpers.
     # TODO: pick some bytes, encode then decode them with b64e/b64d,
@@ -53,3 +55,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
